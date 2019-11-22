@@ -1,0 +1,120 @@
+A)Os princípios da orientação a objeto são: Abstração, Encapsulamento, Herança e Polimorfismo.
+
+B)Objeto é a instância de uma classe.
+
+C)Classe define o comportamento de seus objetos, ela seria um molde no qual seus objetos serão definidos.
+
+D)A instância de uma classe é um novo objeto criado a partir dela.
+
+E)Métodos são as representações das ações de um objeto de uma classe.
+
+F)Construtores são inicialidores de um objeto, ele sempre terá o nome de sua classe.
+
+g)Quando não se define um construtor para uma classe, o java cria um construtor padrão para ela, ele não tem parâmetros definidos.
+
+H)Sobrescrita de um método é quando especializamos um método de uma classe que foi herdado de uma superclasse.
+
+I)A sobrecarga de métodoé quando criamos mais de 1 método com o mesmo nome e seus argumentos são diferentes, isso permite adaptar o método. 
+
+J)Referência é o valor que uma variável tem.
+
+K)Ao se programar sem utilizar a IDE você tem a necessidade de suprir a comunicação que a IDE tinha com a linguagem de programação utilizando
+comandos diversos, mas como vantagem vem a compreensão do que se está fazendo e uma maior prática e fixação do conhecimento.
+
+L)Sim, é possível editar o código em qualquer editor de texto que se tenha os caracteres necessários para se programar, 
+somente não será possível executar o código no editor de texto.
+
+M)O encapsulamento faz com que objetos tenham acessos determinados, um objeto que está "public" pode ser acessado de qualquer lugar em seu projeto,
+mas se ele estiver como "protected" ou "private" ele tem restrições sobre seu acesso, assim podemos garantir uma maior segurança e contole do acesso
+a esses objetos.
+
+N)A Herança permite que classes herdem características de uma classe pai, assim reutilizamos o código e podemos especializar uma classe.
+
+O)O polimorfismo permite que classes derivadas de uma unica classe pai possam invocar o mesmo método e se comportar de maneira diferente 
+em cada uma.
+
+P)Os operadores bitwiswe funcionam de forma parecida com um boolean, mas são operações com números que mesmo que sua primeira parte 
+for falsa ele verificará as outras, eles funcionam com operadores lógicos e dão resultados "true" ou "false".
+
+Q)Em mínimas palavras, o molde ou esqueleto do objeto. Peguemos um exemplo de carro. De um carro para outro podemos ter cores diferentes, quantidade de portas diferentes, marcas diferente e nomes de modelo diferentes, portanto não podemos deixar valores estáticos, 
+é necessário se ter a criação das variáveis na classe do objeto e ir definindo os valores conforme a utilização do programa.
+
+S) public: Uma declaração com o modificador public pode ser acessada de qualquer lugar e por qualquer entidade que possa visualizar a classe a que ela pertence.
+   private: Os membros da classe definidos como não podem ser acessados ou usados por nenhuma outra classe. Esse modificador não se aplica às classes, somente para seus métodos e atributos. Esses atributos e métodos também não podem ser visualizados pelas classes herdadas.
+   protected: O modificador protected torna o membro acessível às classes do mesmo pacote ou através de herança, seus membros herdados não são acessíveis a outras classes fora do pacote em que foram declarados.
+   default: A classe e/ou seus membros são acessíveis somente por classes do mesmo pacote, na sua declaração não é definido nenhum tipo de modificador, sendo este identificado pelo compilador.
+
+5 - Robo:
+        - Método construtor. Robo 
+        - SetColorTampa
+        - ControlarRobo
+    Time:
+        - Método construtor. Time
+        - IncluirRobos/IncluirJogadores
+        - SetColorTime
+    Bola:
+        - Método construtor. Bola 
+    Campo:
+        - Método construtor. Campo
+        - InluirTimes
+        - IncluirBola
+    Partida:
+	- Método construtor. Partida
+        - SetPlacar
+
+6 - Estoque:
+        - Método Construtor. Estoque
+        - AtualizarEstoque
+        - InserirEstoque
+        - ReduzirEstoque
+    Item:
+        - Método Construtor. Item
+        - VerificarQuantidade
+        - VerificarValidade
+        - FazerEmprestimo
+    Usuario:
+        - Método Construtor. Usuario
+        - CriarUsuario
+        - DeletarUsuario
+        - EditarUsuario
+    Login:
+        - Método Construtor. Login
+
+7 - public class Seguranca
+		boolean permicaoLeitura = false;
+		boolean permicaoEscrita = false;
+		boolean permicaoExecucao = false;
+		String x;
+		
+		public void verificaAcesso(){
+		
+		if(x.equals("r")){
+			permicaoLeitura = true; 
+		}
+		
+		if(x.equals("w")){
+			permicaoEscrita = true; 
+		}
+		
+		if(x.equals("r")){
+			permicaoExecucao = true; 
+		}
+		
+		}
+
+8 - Vantagens:
+        - Vários objetos de um mesmo tipo base sejam tratados da mesma forma
+        - Aumento do código do jogo de maneira mais controlada
+        - Menor trabalho para modificação e aumento do código
+    Desvantagens:
+        - Complexidade de linguagem e implementação
+        - Potencial ineficiência
+
+9 - Vantagens:
+        - Vários objetos de um mesmo tipo base sejam tratados da mesma forma
+        - Aumento do código do jogo de maneira mais controlada
+        - Menor trabalho para modificação e aumento do código
+    Desvantagens:
+        - Complexidade de linguagem e implementação
+        - Potencial ineficiência
+   
