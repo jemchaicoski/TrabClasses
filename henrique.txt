@@ -1,0 +1,98 @@
+1 - a) Abstração, encapsulamento, classes e objetos, atributos, métodos, herança, polimorfismo, relacionamento (associação, agregação e agregação de composição)
+
+b) Objeto é uma instância de uma classe
+
+c) Uma descrição que abstrai um conjunto de objetos com características similares
+
+d) Uma instância de um tipo de objeto é um objeto, ou seja são sinônimos nesse caso
+
+e) É uma sub-rotina que é executada por um objeto ao receber uma "instrução"/"ordem"
+
+f) É um método que determina as ações que devem ser executadas quando da criação de um objeto
+
+g) É um construtor sem parâmetros que é usado para a inicialização padrão, mas em geral ele é criado pelo próprio compilador
+
+h) Também conhecido como "overriding", é um mecanismo que permite que uma subclasse forneça um método que é fornecido por uma das superclasses
+
+i) É um mecanismo que permite que existam vários métodos de mesmo nome, porém variando no número e/ou tipo de argumentos, valor de retorno e até mesmo variáveis diferentes
+
+j) O próprio nome já diz. O objeto é criado na memória, porém atribui uma referência em uma variável.
+
+k) É necessário criar um módulo/arquivo java utilizando-se de algum editor de texto (exemplos: vim, nano, gedit/xedit, etc.), depois de feito isso compila-se o programa (comando javac ou utilizando-se o ant), isso seria principalmente para verificar a sintaxe e após isso executa-se o programa para avaliar se há bugs/derps (só porque o código compilou não significa que tá tudo ok)
+
+l) Sim, porém há a possibilidade de haver problemas com sintaxe or formatação ao salvar o código.
+
+m) Fazer o programa em partes, o mais isoladas possível, assim tornando o código mais flexível e mais fácil de modificar futuramente.
+
+n) Compartilhamento de atributos e métodos na intenção de reaproveitar código/comportamento generalizado
+
+o) É o princípio no qual duas ou mais classes derivadas de uma mesma superclasse podem invocar métodos que têm a mesma identificação (número e/ou tipo de argumentos, valor de retorno e até mesmo variáveis diferentes), porém comportamentos distintos, especializados para cada classe derivada, usando para tanto uma referência a um objeto do tipo da superclasse
+
+p) &: operação "E" entre os bits. Resulta somente em 1 se todos os valores forem 1.
+   ||: operação "OU" entre os bits. Resulta somente em 1 se pelo menos um e qualquer valor for 1.
+   ^: operação "OU-Exclusivo" entre os bits. Resulta somente em 1 se apenas um valor for 1 (1^1 = 0).
+   ~: operação de "negação". Inverte os valores dos bits.
+
+q) Em mínimas palavras, o molde ou esqueleto do objeto. Peguemos um exemplo de carro. De um carro para outro podemos ter cores diferentes, quantidade de portas diferentes, marcas diferente e nomes de modelo diferentes, portanto não podemos deixar valores estáticos, é necessário se ter a criação das variáveis na classe do objeto e ir definindo os valores conforme a utilização do programa.
+
+s) public: Uma declaração com o modificador public pode ser acessada de qualquer lugar e por qualquer entidade que possa visualizar a classe a que ela pertence.
+   private: Os membros da classe definidos como não podem ser acessados ou usados por nenhuma outra classe. Esse modificador não se aplica às classes, somente para seus métodos e atributos. Esses atributos e métodos também não podem ser visualizados pelas classes herdadas.
+   protected: O modificador protected torna o membro acessível às classes do mesmo pacote ou através de herança, seus membros herdados não são acessíveis a outras classes fora do pacote em que foram declarados.
+   default: A classe e/ou seus membros são acessíveis somente por classes do mesmo pacote, na sua declaração não é definido nenhum tipo de modificador, sendo este identificado pelo compilador.
+
+2, 3 e 4 - https://gitlab.com/Hlcpereira/exercicios_java_IF
+
+5 - Robo:
+        - Método construtor. Robo 
+        - SetColorTampa
+        - ControlarRobo
+    Time:
+        - Método construtor. Time
+        - IncluirRobos/IncluirJogadores
+        - SetColorTime
+    Bola:
+        - Método construtor. Bola 
+    Campo:
+        - Método construtor. Campo
+        - InluirTimes
+        - IncluirBola
+    Partida:
+	- Método construtor. Partida
+        - SetPlacar
+
+6 - Estoque:
+        - Método Construtor. Estoque
+        - AtualizarEstoque
+        - InserirEstoque
+        - ReduzirEstoque
+    Item:
+        - Método Construtor. Item
+        - VerificarQuantidade
+        - VerificarValidade
+        - FazerEmprestimo
+    Usuario:
+        - Método Construtor. Usuario
+        - CriarUsuario
+        - DeletarUsuario
+        - EditarUsuario
+    Login:
+        - Método Construtor. Login
+
+7 - 
+
+8 - Vantagens:
+        - Vários objetos de um mesmo tipo base sejam tratados da mesma forma
+        - Aumento do código do jogo de maneira mais controlada
+        - Menor trabalho para modificação e aumento do código
+    Desvantagens:
+        - Complexidade de linguagem e implementação
+        - Potencial ineficiência
+
+9 - Vantagens:
+        - Vários objetos de um mesmo tipo base sejam tratados da mesma forma
+        - Aumento do código do jogo de maneira mais controlada
+        - Menor trabalho para modificação e aumento do código
+    Desvantagens:
+        - Complexidade de linguagem e implementação
+        - Potencial ineficiência
+
