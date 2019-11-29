@@ -19,6 +19,19 @@ public class Matriz {
 			}
 		}
 	}
+	public void criaMatrizID() {
+		int x = 0;
+		for (int i = 0; i < this.linhas; i++) {
+			for (int j = 0; j < this.colunas; j++) {
+				if((x == 0) || (x == colunas)) {
+					this.valores[i][j] = 1;	
+				}else {
+					this.valores[i][j] = 0;
+				}
+				x++;
+			}
+		}
+	}
 
 	public void printMatriz() {// printa matriz na tela
 		for (int i = 0; i < this.linhas; i++) {
@@ -35,18 +48,17 @@ public class Matriz {
 		}
 	}	
 
-	public void multiplicacao(Matriz matriz, Matriz matriz2) {//multiplica as matrizes
-		
-		double[][] matriz3 = null;
-		for (int i = 0; i < matriz.valores.length-1; i++) {
-			for (int j = 0; i < matriz.valores.length-1; j++) {
-				matriz3[i][j] = (matriz.valores[i][j]) * (matriz2.valores[i][j]);
-			}
-		}
-		for (int i = 0; i < matriz.valores.length-1; i++) {
-			for (int j = 0; i < matriz.valores.length-1; j++) {
-				this.valores[i][j] = matriz3[i][j];
-			}
-		}
+	public void multiplicacao(Matriz matriz, Matriz matriz2, int linhas, int colunas) {//multiplica as matrizes
+		int c[][]=new int[linhas][colunas];
+		for(int i=0;i<c.length;i++){    
+			for(int j=0;j<c.length;j++){    
+				c[i][j]=0;      
+				for(int k=0;k<c.length;k++){      
+					c[i][j]+=matriz.valores[i][k]*matriz2.valores[k][j];      
+				}//fim k
+				System.out.println(i+1+"° coluna " + c[i][j]+" ");   
+			}//fim j 
+			System.out.println();    
+		} 
 	}
 }
